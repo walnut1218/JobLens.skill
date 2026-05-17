@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "boss-zhipin-job-search"
+version = "0.2.0"
+description = "Minimal BOSS Zhipin job search CLI (httpx + optional patchright), extracted from boss-agent-cli patterns."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+	"httpx>=0.27",
+	"browser-cookie3>=0.16.2",
+	"python-docx>=1.2.0",
+]
+
+[project.optional-dependencies]
+playwright = [
+	"patchright>=1.58.2",
+]
+
+[project.scripts]
+zhipin-search = "boss_zhipin_job_search.app:main"

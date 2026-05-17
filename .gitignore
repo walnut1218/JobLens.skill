@@ -1,0 +1,24 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+dist/
+*.egg-info/
+
+# 个人凭证
+token.json
+
+# 爬取数据
+*.csv
+jobs_data.json
+seen_jobs.txt
+
+# 用户简历
+user_resume.txt
+
+# 生成报告
+*.docx
+*.pdf
+
+# 临时脚本
+_gen_*.py
+_dump_*.py
